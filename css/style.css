@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+*, html{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: .2s;
+}
+body{
+    width: 100%;
+    font-family: Poppins;
+}
+:root{
+    --background-header: #3578e5;
+    --color-text-index: #1C91CD;
+    --backgroun-header-responsive: white;
+}
+nav{
+    background: var(--background-header);
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 999;
+    position: fixed;
+}
+nav .navbar-top{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+nav .navbar-top .logo a{
+    line-height: 50px;
+    cursor: pointer;
+    border: 0px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+nav .navbar-top .logo a:hover{
+    border: 0px;
+    color: white;
+}
+nav .navbar-top ul{
+    display: flex;
+}
+nav .navbar-top ul li{
+    line-height: 50px;
+    margin-left: 20px;
+    border-bottom: 0px;
+}
+nav .navbar-top ul li a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+nav .navbar-top ul li:hover a{
+    color: rgb(244, 237, 237);
+    transition: 0.3s;
+    border-bottom: 0px;
+}
+nav .navbar-top ul li a i{
+    display: none;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--background-header);
+}
+footer .footer{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .footer .content-footer{
+    width: 29%;
+    margin-top: 20px;
+}
+footer .footer .content-footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-right: 10px;
+    border: 3px solid white;
+}
+footer .footer .content-footer h3{
+    color: white;
+    margin-bottom: 12px;
+}
+footer .footer .content-footer:nth-child(2) .link-social-media{
+    display: inline;
+}
+footer .footer .content-footer:nth-child(2) .link-social-media a{
+    color: rgb(235, 231, 231);
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    transition: .3s;
+}
+footer .footer .content-footer:nth-child(2) .link-social-media:hover{
+    color: rgb(139, 131, 131);
+}
+footer .footer .content-footer:nth-child(3) .menu-link{
+    display: inline;
+}
+footer .footer .content-footer:nth-child(3) .menu-link a{
+    color: rgb(235, 231, 231);
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    transition: .3s;
+}
+footer .footer .content-footer:nth-child(3) .menu-link a:hover{
+    transform: scale(1.01);
+    /* margin-left: 20px; */
+}
+
+/* footer 2 */
+footer .footer2{
+    width: 100%;
+    background-color: rgb(48,56,70);
+    margin-top: 30px;
+    height: 30px;
+}
+footer .footer2 .footer-2-center{
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    color: white;
+}
+footer .footer2 .footer-2-center p{
+    line-height: 30px;
+}
+footer .footer2 .footer-2-center .link-social-media{
+    margin-top: 4px;
+}
+footer .footer2 .footer-2-center .link-social-media a{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+/* judul gambar */
+.judul_gambar{
+    color: var(--color-text-index);
+    font-size: 18px;
+    margin-top: 55px;
+}
+
+
+
+#myVideo{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+/* profile */
+nav .navbar-top .profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.display-6{
+    color: var(--color-text-index);
+}
+.ucapan-syukur{
+    color: #888;
+}
+
+/* carousel-item */
+/* .carousel-item{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}  */
+
+/* responsive header  */
+@media (max-width: 968px) {
+    nav .navbar-top ul{
+        position: absolute;
+        margin-top: 50px;
+        width: 100%;
+        background-color: var(--background-header);
+        justify-content: space-between;
+        padding: 0px;
+        z-index: 999;
+    }
+    nav .navbar-top ul li{
+        margin-right: 20px;
+    }
+    nav .navbar-top ul li:hover a{
+        border-bottom: 1px solid white;
+    }
+    nav .navbar-top ul li a i{
+        display: inline;
+    }
+    body nav{
+        background-color: var(--backgroun-header-responsive);
+    }
+    nav .navbar-top .logo a{
+        color: var(--color-text-index);
+        margin-left: 20px;
+    }
+    nav .navbar-top .logo a:hover{
+        color: var(--color-text-index);
+        margin-left: 20px;
+    }
+    nav .navbar-top {
+        max-width: 100%;
+    }
+    #carouselExampleIndicators .carouselExampleIndicators{
+        margin-top: 100px;
+    }
+    #myVideo{
+        width: 300%;
+        height: auto;
+        margin: auto;
+        margin-left: -200px;
+        filter: brightness(0.7);
+    }
+    nav .navbar-top .profile a img{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        margin-right: 0px;
+        right: 20px;
+    }
+    footer .footer .content-footer{
+        width: 100%;
+    }
+    .judul_gambar{
+        color: var(--color-text-index);
+        font-size: 18px;
+        padding-top: 60px;
+    }
+    .see-all-pictures{
+        margin-top: 85px;
+    }
+    .ucapan-syukur{
+        margin-top: 110px;
+        color: #888;
+    }
+  }
